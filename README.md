@@ -261,4 +261,4 @@ Tests run automatically on every push and daily at 11:30 AM IST.
 
 ## 📄 License
 
-MIT © [Rahul Yadav](https://github.com/Rahulyadav-26)
+ [Rahul Yadav](https://github.com/Rahulyadav-26)
