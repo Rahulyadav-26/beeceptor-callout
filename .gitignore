@@ -1,0 +1,75 @@
+# ─── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ─── Build Output ─────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+*.js.map
+*.tsbuildinfo
+
+# ─── 🔴 Environment & Secrets (NEVER commit these) ───────────────────────────
+.env
+.env.*
+# Exception: .env.example is safe to commit (contains no real secrets)
+!.env.example
+*.pem
+*.key
+*.crt
+*.cert
+secrets.json
+credentials.json
+service-account.json
+
+# ─── Playwright ───────────────────────────────────────────────────────────────
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+/tmp/
+
+# ─── Allure ───────────────────────────────────────────────────────────────────
+allure-results/
+allure-report/
+
+# ─── Coverage ─────────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ─── IDE / Editor ─────────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+# VS Code — only ignore user-specific settings, not shared config
+.vscode/settings.json
+.vscode/launch.json
+.vscode/*.code-snippets
+
+# ─── Temp / Scratch ───────────────────────────────────────────────────────────
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/

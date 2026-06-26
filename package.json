@@ -1,0 +1,27 @@
+{
+  "name": "beeceptor-callout",
+  "version": "1.0.0",
+  "description": "End-to-end Playwright test suite for Beeceptor HTTP Callout Rule feature — both synchronous and asynchronous scenarios",
+  "author": "Rahul Yadav <Rahulyadav-26>",
+  "license": "MIT",
+  "scripts": {
+    "test": "playwright test",
+    "test:sync": "playwright test tests/sync-callout.spec.ts --reporter=list",
+    "test:async": "playwright test tests/async-callout.spec.ts --reporter=list",
+    "test:negative": "playwright test tests/negative.spec.ts --reporter=list",
+    "test:edge": "playwright test tests/edge-cases.spec.ts --reporter=list",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@faker-js/faker": "^9.0.0",
+    "@types/node": "^20.14.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.3"
+  }
+}
